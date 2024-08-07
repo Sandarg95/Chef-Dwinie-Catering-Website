@@ -14,7 +14,6 @@ This repository contains the source code for the Chef Dwinie Catering website. T
 - [How to Use](#how-to-use)
 - [Contact](#contact)
 - [Contributing](#contributing)
-- [License](#license)
 
 ## About
 
