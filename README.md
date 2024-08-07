@@ -30,13 +30,21 @@ Chef Dwinie Catering is dedicated to sharing the authentic flavors of Caribbean 
 ## File Structure
 
 ├── index.html # Homepage
+
 ├── about.html # About Us page
+
 ├── contact.html # Contact Us page
+
 ├── partner.html # Partners page
+
 ├── service.html # Services page
+
 ├── myFunctions.js # JavaScript functions
+
 ├── style.css # CSS styles
+
 ├── images/ # Directory for images used on the website
+
 └── README.md # This README file
 
 ## Technologies Used
