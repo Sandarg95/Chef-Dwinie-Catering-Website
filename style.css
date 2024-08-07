@@ -1,0 +1,430 @@
+
+
+/* 
+==========================================================================
+Some globals
+==========================================================================
+*/
+
+* {
+  box-sizing: border-box;
+}
+dt{
+  color: darkblue;
+  font-weight: 700;
+}
+
+
+table{
+  border-color: blue;
+  border: 1px solid blue;
+  border-collapse: collapse;
+  width:90%;
+}
+td,th{
+  padding:5px;
+  border:1px solid blue;
+}
+td{
+  text-align: center;
+}
+td.text{
+  text-align: left;
+}
+
+tr:nth-child(even){
+  background-color: lightblue ;
+}
+textarea{
+  margin-bottom: 0.5em;
+}
+
+nav{
+  font-size:1.2em;
+  text-align:left;
+}
+nav a { text-decoration: none; }
+nav a:link{
+  color:white;
+}
+nav a:visited{
+  color:whitesmoke;
+}
+nav a:hover{
+  color:#A52A2A;
+}
+a {
+  -webkit-transition: all 0.2s ease-out;
+  -moz-transition: all 0.2s ease-out;
+  -o-transition: all 0.2s ease-out;
+  -ms-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+}
+
+nav li{
+  padding-top:0.5em;
+  padding-bottom: 0.5em;
+  padding-left:0.5em;
+  padding-right:0.5em;
+  width:100%;
+  border-bottom:2px solid;
+  list-style: none;
+}
+
+html, body {
+  font-family: "ff-meta-web-pro", sans-serif;
+  text-rendering: optimizeLegibility;
+  font-size: 100%;
+  line-height: 26px;
+  background: #f6efe5;
+  background-size: 60%;
+  color: #0d2c40;
+  padding-top:0;
+  padding-bottom:0;
+  padding-left:0.7em;
+  padding-right:0.2em;
+  display:block;
+}
+
+.image-container{
+  position:relative;
+  width:100%;
+  margin:0 auto;
+}
+.plantain{
+  position:absolute;
+  left:600px;
+  top:-350px;
+  background-repeat: no-repeat;
+  height: 350px;
+  background-size:200% 100%;
+}
+.partner{
+  position:absolute;
+  left:600px;
+  top:-350px;
+  background-repeat: no-repeat;
+  height: 350px;
+  background-size:200% 100%;
+}
+.partnership{
+  position:relative;
+  bottom:0;
+  background-repeat: no-repeat;
+  height: 350px;
+  background-size:200% 100%;
+}
+.haitian{
+  position:relative;
+  bottom:0;
+  background-repeat: no-repeat;
+  width:1600px;
+  height: 1208px;
+  background-size:200% 100%;
+}
+.mon-image{
+  position:absolute;
+  left:600px;
+  top:-350px;
+  background-repeat: no-repeat;
+  height: 350px;
+  background-size:200% 100%;
+}
+.about{
+  position:absolute;
+  left:600px;
+  top:-350px;
+  background-repeat: no-repeat;
+  height: 350px;
+  background-size:200% 100%;
+}
+.contact{
+  position:absolute;
+  left:600px;
+  top:-350px;
+  background-repeat: no-repeat;
+  height: 350px;
+  background-size:200% 100%;
+}
+
+#conhero{
+  background-image: url(contacts.png);
+  background-repeat: no-repeat;
+  height: 680px;
+  background-size:100% 100%;
+}
+#servhero{
+  background-image: url(plantain.png);
+  background-repeat: no-repeat;
+  height: 680px;
+  background-size:100% 100%;
+}
+
+footer{
+  width:82.5%;
+  font-size:0.7em;
+  font-style:italic;
+  text-align:center;
+  padding:1em;
+}
+.resort{
+  color:#1976D2;
+  font-size: 1.2em;
+}
+.cite{
+  color:black;
+  font-size: 1.1em;
+  font-weight: 600;
+}
+
+form{
+  display: flex;
+  flex-direction: column;
+  padding-left: 1em; 
+  width: 80%;
+}
+
+/* 
+==========================================================================
+Page wrapper
+==========================================================================
+*/
+.page-wrapper {
+  position: relative;
+  width: 100%;
+  max-width: 120em;
+  margin: 0 auto;
+  padding: 0;
+  overflow: hidden;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+/* 
+==========================================================================
+Intro
+==========================================================================
+*/
+.intro {
+  overflow: hidden;
+}
+.intro header {
+  position: relative;
+  background: #c879b2;
+  overflow: hidden;
+  width: 55%;
+  height: 20em;
+  float: left;
+  -webkit-transition: all 0.4s ease;
+  -moz-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+  -ms-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+  @media (max-width: 70em) {
+    .intro header {
+      background: #f15a30;
+      width: 100%;
+      height: 20em;
+    }
+
+    .image-container{
+        position:relative;
+        background-size: 60%;
+        color: #0d2c40;
+      }
+    .mon-image{
+      display:none;    
+    }
+    .plantain{
+      display:none;
+    }
+    .partner{
+      display:none;
+    }
+    .about{
+      display:none;
+    }
+    .contact{
+      display:none;
+      
+    }
+    .partnership{
+      position:relative;
+      bottom:0em;
+      background-repeat: no-repeat;
+      max-width: 110%;
+      height:auto;
+    }
+   
+    .haitian{
+      position:relative;
+      bottom:0em;
+      background-repeat: no-repeat;
+      max-width: 60%;
+      height:auto;
+    }
+  }
+  @media (max-width: 53em) {
+    .intro header {
+      background: blue;
+      width: 100%;
+      height: 20em;
+    }
+  }
+
+
+.intro header h1 {
+  position: absolute;
+  color: #0d2c40;
+  font-size: 100%;
+  line-height: 2em;
+  top: 7.2em;
+  left: -5.5em;
+  width: auto;
+  margin: 0;
+  padding: 1em;
+  -webkit-transform: rotate(-90deg);
+  -moz-transform: rotate(-90deg);
+  -ms-transform: rotate(-90deg);
+  -o-transform: rotate(-90deg);
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.intro header h2 {
+  position: relative;
+  background: #0d2c40 ;
+  background-size: 101%;
+  float: right;
+  color: #ffffff;
+  font-size: 250%;
+  line-height: 1.25em;
+  width: 55%;
+  height: 15.019em;
+  margin: 0 0 0 0;
+  padding: 2.5em 0.5em 0 0.5em;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+
+  @media (max-width: 70em) {
+    .intro header h2 {
+      background: #0d2c40 url(icon-star.svg) no-repeat left bottom;
+      background-size: 49%;
+      width: 55%;
+      height: 8em;
+      padding: 3em 0.5em 0 0.5em;
+    }
+  }
+  @media (max-width: 53em) {
+    .intro header h2 {
+      background: #0d2c40 url(icon-star.svg) no-repeat left bottom;
+      background-size: 49%;
+      font-size: 200%;
+      width: 55%;
+      height: 10em;
+      padding: 4em 0.5em 0 0.5em;
+    }
+  }
+
+
+/* 
+==========================================================================
+Slideshow
+==========================================================================
+*/
+  .mySlides {display: none}
+  img {vertical-align: middle;}
+  
+  /* Slideshow container */
+  .slideshow-container {
+    max-width: 300px;
+    position: relative;
+    margin: auto;
+  }
+  
+  /* Next & previous buttons */
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+  }
+  
+  /* Caption text */
+  .text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+  }
+  
+  /* Number text (1/3 etc) */
+  .numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  }
+  
+  /* The dots/bullets/indicators */
+  .dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  
+  .active, .dot:hover {
+    background-color: #717171;
+  }
+  
+  /* Fading animation */
+  .fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+  
+  /* On smaller screens, decrease text size */
+  @media only screen and (max-width: 300px) {
+    .prev, .next,.text {font-size: 11px}
+  }
+ 
+  
+
+  

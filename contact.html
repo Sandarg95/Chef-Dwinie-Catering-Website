@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>CHEF DWINIE CATERING : Our Services</title>
+
+    <link rel="stylesheet" media="screen" href="style.css?v=15november2023">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="author" content="Daniel Santana">
+	<meta name="description" content="Contact now Chef Dwinie Catering - Final Project course SDEV153 Ivy Tech.">
+	<meta name="robots" content="all">
+    <script src="myFunctions.js"></script>
+</head>
+    <!--[if lt IE 9]>
+	<script src="script/html5shiv.js"></script>
+	<![endif]-->
+
+<body id="chefdwinie">
+<div class="page-wrapper">
+    <section class="intro" id="dwinie-intro">
+        <header>
+			<h1>TASTE THE FEELINGS !</h1>
+			<h2>Contact <abbr title="Cascading Style Sheets">US</abbr> </h2>
+			<nav>
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="service.html">Service</a></li>
+					<li><a href="partner.html">Partners</a></li>
+					<li><a href="about.html">About Us</a></li>
+					<li><a href="contact.html">Contact</a></li>
+				</ul>
+			</nav>
+		</header>    
+    </section>
+	<div class="image-container">
+		<img src="contacts.png" alt="contact" class="contact">
+	</div>
+
+	<main> 
+        <h3>Contact Us Now</h3>
+        Required fields are marked with an asterisk*.
+        <p>
+            <form method="post" action="https://formspree.io/f/xrgnzndw">
+            <label for="myFName">*First Name:</label> <input type="text" id="myFName" name="First Name" required>
+            <label for="myLName">*Last Name:</label> <input type="text" id="myLName" name="Last Name" required>
+            <label for="myMAdress">Mailling Adress:</label> <input type="text" id="myMAdress" name="Mailling Adress" >
+            <label for="myEmail">*E-mail:</label> <input type="email" id="myEmail" name="Email"  required>
+            <label for="myPhone">Phone:</label> <input type="text" id="myPhone" name="Phone" onblur="checkPhone('myPhone','message')">
+            <label for="myDate">Begin Date:</label> <input type="date" id="myDate" name="Begin Date" >
+            <label for="myDDate">End Date:</label> <input type="date" id="myDDate" name="End Date" >
+            <label for="myGuests">Guests:</label> <input type="number" id="myGuests" min="1" max="1000" name="Guests" >
+            <label for="myComments">*Comments:</label> <textarea id="myComments" name="Comments" rows="2" cols="20" required></textarea>
+            <input type="submit" id="mySubmit">
+        </form>
+   
+    <div> <span id="message"></span></div>
+    </main>
+       
+</div>
+<footer>
+   <br> Copyright &#xa9; 2023 Chef Dwinie Catering <br> Indianapolis, Indiana <br> <a href="mailto:dsantana15@ivytech.edu">dssantana15@ivytech.edu</a> 
+	<br><a id="mobile" href="tel:3177342233">(317) 734-2233</a>
+</footer>
+</body>
